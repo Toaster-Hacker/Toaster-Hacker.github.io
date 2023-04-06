@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 70vw;
+  height: 75vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  perspective: 1200px;
+}
+
+.card{
+  width: 70vw;
+  height: 70vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform-style: preserve-3d;
+}
+
+.card .card-bg{
+  position: relative;
+  top : -12vw;
+  right : -4vw;
+}
+
+.card .card-bg img{
+  width: 100%;
+
+  z-index: 0;
+  position : relative;
+  border-radius: 10px;
+}
+
+.card .layer1 {
+  width : 70vw;
+  height : 39.35vw;
+
+  z-index: 1;
+  position: absolute;
+  top: 13.5vw;
+  left: 0;
+
+  text-align: center;
+  line-height: 40px;
+  background-image: url("mountain.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: all 0.3s ease-out;
+}
+
+.card .layer2 {
+  width : 70vw;
+  height : 39.35vw;
+
+  z-index: 2;
+  position: absolute;
+  top: 13.5vw;
+  left: 1vw;
+
+  text-align: center;
+  line-height: 4vw;
+  background-image: url("school.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: all 0.3s ease-out;
+}
+
+.card .title {
+  width : 70vw;
+  height : 39.35vw;
+
+  z-index: 5;
+  position: absolute;
+  top: 28vw;
+  left: 1vw;
+
+  text-align: center;
+  line-height: 40px;
+  font-size : 2em;
+  color : white;
+
+  transition: all 0.3s ease-out;
+}
