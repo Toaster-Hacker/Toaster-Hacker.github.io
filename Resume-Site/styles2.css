@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap');
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  display : flex;
+  flex-direction : column;
+  position : fixed;
+  height : 100vh;
+  color : rgba(255,255,255,0.8);
+  background-color : rgb(237,125,49);
+  top : 0;
+  height : 100vh;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  z-index : 5;
+}
+
+nav .nav-left {
+  flex : 1 1 200px;
+  padding-top : 20px;
+  padding-left : 45px;
+}
+
+.nav-title {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 3em;
+  font-weight: 5em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 0;
+  color: rgba(255,255,255,0.8);
+}
+
+.nav-title:visited {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 2.5em;
+  line-height: 0em;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+nav .nav-section {
+  height : 2em;
+  padding : 0 0;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width : 2.5em;
+  color: rgba(255,255,255,0.8);
+  background-color : rgb(237,125,49);
+  font-size : 2em;
+  line-height : 2em;
+  border-left-style : solid;
+  border-left-color : rgba(255,255,255,0.8);
+  border-left-width : 1px;
+}
+
+.nav-section:hover {
+  color:rgba(255,255,255,1);
+}
+
+.nav-section:visited {
+  color:rgba(255,255,255,1);
+}
+
+.image-carousel {
+  position : relative;
+  left : 50px;
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  width : 100%;
+  align-items: center;
+}
+
+#image-display {
+  background-image : url("StateMachine.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 100%;
+  height : 35vw;
+  height : 50vw;
+}
+
+#image-display img {
+  height : 35vw;
+  width : 50vw;
+}
+
+.turn {
+  top : 325px;
+  height: 50px;
+  width: 50px;
+  margin : 25px;
+  font-size: 2.5em;
+  text-align: center;
+  color : rgba(255,255,255,0.8);
+  background-color: #bbb;
+  line-height: 1.34em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.turn:hover {
+  color : rgba(255,255,255,1);
+  background-color: rgb(150,150,150);
+}
+
+main {
+        position : relative;
+        left : 90px;
+        width : calc(100% - 90px);
+        border-top-color: gray;
+        border-top-style: solid;
+        border-top-width: 5px;
+        padding-top: 1vh;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  margin : 100px 50px;
+  background-color : rgb(6,11,25);
+  color : white;
+  height : 50vh;
+  width : 30vh;
+  text-align: center;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 5vw;
+  line-height: 4.5em;
+  transform: skew(10deg);
+}
+
+.card:hover {
+  height : 55vh;
+  width : 30vh;
+  margin-top: 85px;
+  line-height : 5em;
+  font-size : 5.5vw;
+  transform : skew(0);
+  transition : 0.5s;
+}
+
+#style1 {
+  background-color : rgb(6,11,25);
+  color : white;
+}
+
+#style2 {
+  background-color : rgb(237,125,49);
+  color : white;
+}
+
+#style3 {
+  background-color : rgb(92,169,4);
+  color : white;
+}
+
+.description {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 2.5em;
+  font-weight: 7.5em;
+  color: rgb(6,11,25);
+  width : calc(100% - 40px);
+  padding : 20px;
+}

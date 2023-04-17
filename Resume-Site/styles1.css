@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap');
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+nav {
+  display : flex;
+  flex-direction : row;
+  position : sticky;
+  width : 100%;
+  color : rgba(255,255,255,0.8);
+  background-color : rgb(6,11,25);
+  top : 0;
+  height : 4em;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  z-index : 5;
+}
+
+nav .nav-left {
+  flex : 1 1 200px;
+  padding-left : 5vw;
+}
+
+.nav-title {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 3.5em;
+  font-weight: 5em;
+  line-height: 1.10em;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+nav .nav-section {
+  height : 100%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width : 3em;
+  color: rgba(255,255,255,0.8);
+  background-color : rgb(6,11,25);
+  font-size : 2em;
+  line-height : 2em;
+  border-left-style : solid;
+  border-left-color : rgba(255,255,255,0.8);
+  border-left-width : 1px;
+}
+
+.nav-section:hover {
+  color:rgba(255,255,255,1);
+}
+
+.nav-section:visited {
+  color:rgba(255,255,255,1);
+}
+
+.image-carousel {
+  display : flex;
+  flex-direction : row;
+  justify-content : center;
+  width : 100%;
+  align-items: center;
+}
+
+#image-display {
+  background-image : url("StateMachine.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width : 100%;
+  height : 35vw;
+  width : 50vw;
+}
+
+#image-display img {
+  height : 35vw;
+  width : 50vw;
+}
+
+.turn {
+  top : 325px;
+  height: 50px;
+  width: 50px;
+  margin : 25px;
+  font-size: 2.5em;
+  text-align: center;
+  color : rgba(255,255,255,0.8);
+  background-color: #bbb;
+  line-height: 1.34em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.turn:hover {
+  color : rgba(255,255,255,1);
+  background-color: rgb(150,150,150);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  margin : 100px 50px;
+  background-color : rgb(6,11,25);
+  color : white;
+  height : 50vh;
+  width : 30vh;
+  text-align: center;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 5vw;
+  line-height: 4.5em;
+  border-radius: 25px;
+}
+
+.card:hover {
+  height : 45vh;
+  width : 25vh;
+  margin-top:120px;
+  line-height : 4em;
+  font-size : 5.5vw;
+  transition : 0.5s;
+}
+
+#style1 {
+  background-color : rgb(6,11,25);
+  color : white;
+}
+
+#style2 {
+  background-color : rgb(237,125,49);
+  color : white;
+}
+
+#style3 {
+  background-color : rgb(92,169,4);
+  color : white;
+}
+
+.description {
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 3em;
+  font-weight: 5em;
+  color: rgb(6,11,25);
+  width : calc(100% - 40px);
+  padding : 20px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Album Carousel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/1c931d5b5b.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div id="intro">
+      <div class="description">
+        There are three main tools that make up how websites are structured and transferred – those being HyperText 
+        Markup Language, Cascading Style Sheets, and JavaScript. HyperText Markup Language, or HTML, is perhaps the 
+        most foundational element of webpage and digital design – making up the text and image content of the webpage, 
+        classifying them by elements, classes, and identifiers, and laying out their general structure for the page. 
+        Cascading Style Sheets, or CSS, is then the tool that takes html content and styles it by its classifications 
+        – responsible for more stylistic choices such as font, spacing, and color, as well as key elements including 
+        positioning, sizing, and general layout. JavaScript is the last tool that often comes paired in the trio, 
+        enabling more interactive elements of a webpage through direct function calls, event listeners and clever 
+        scripting. If we were to think of a webpage as a container for information much akin to a physical cupboard or 
+        dresser, then HTML would comprise the drawers and contents, while CSS captures properties such as color, 
+        sizing, ornamentation, and layout. Lastly, JavaScript would make up the more interactive elements of the 
+        dresser not quite embodied by the previous two, including how it opens, if it locks, and perhaps if there are 
+        other user features. Although alternatives and upgrades have been created for each tool in the time since their 
+        inception, this phase of the practicum primarily focuses on how to create a webpage from scratch using 
+        foundational HTML5, CSS3, and JavaScript. As part of a three-webpage series, each webpage showcases and 
+        highlights a specific tool of the trio, demonstrating their strengths and use cases while getting in some 
+        practice. 
+        <br>
+        <br>
+        For this example, I created a simple album carousel webpage to demonstrate the potential and effect of 
+        JavaScript support. As mentioned previously, JavaScript is primarily used today to add a certain flair or 
+        interactivity to a webpage that cannot otherwise be captured by HTML or CSS.  Though JavaScript as a language 
+        can exist in many forms, basic JavaScript in webpages is typically structured as a collection of functions or 
+        event listeners that execute upon user interaction, such as a mouse click or hover. To pull specific objects 
+        for function calls and editing, JavaScript uses method calls similar to CSS selectors, taking in classes and 
+        identifiers as parameters. In doing so, JavaScript can edit the style, contents, and even metadata of pulled 
+        elements, scripting them to change with interaction from the user or even each other. While JavaScript is 
+        probably the least necessary tool of the common trio, its versatility as a scripting language adds a new 
+        potential for how websites can interact with its users, adding a flair unique to the digital platform. 
+        <br>
+        <br>
+        This webpage attempts to capture the interactivity of JavaScript by creating an album carousel, complete with 
+        interactive cards that dip with the mouse and either rotate or turn around with a click. The interactive cards 
+        are achieved with 3 event listeners for each card, activating when the mouse moves onto a card, continues to be 
+        on a card, and exits a card. In doing so, the event listeners then collect the X,Y positioning of the mouse, 
+        attenuate it according to the width of the card, and apply it to the rotation of the card, creating an animated
+        effect. Using a wrapper with a static field indicating which card is in the center, only one card is activated 
+        at a time, letting the user interact with just the center. Meanwhile, the other two cards are associated with a 
+        function that rotates the whole carousel by one, updating each HTML object with a new class and incrementing 
+        the static field. Together, these systems create an album carousel that uses the basic tools of JavaScript to 
+        interact with the user that otherwise wouldn’t have been possible.
+      </div>
+    </div>
+    <div class="carousel">
+    <div id="containerMiddle" class="container">
+      <div id="cardMiddle" class="card" onclick="myFunction(1)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="NanaGrizol.jpg" alt="Nana Grizol - Ruth"/>
+          </div>
+          <div class="card-back">
+            <h1>RUTH</h1>
+            <h3> Nana Grizol </h3>
+            Cynicism <br/>
+            Galaxies <br/>
+            Blackbox <br/>
+            Atoms <br/>
+            Gave On <br/>
+            Grady and Dubose <br/>
+            From Here <br/>
+            Alice And Gertrude <br/>
+            Arthur Hall <br/>
+            For Things That Haven't Come Yet <br/>
+            Sands <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="containerLeft" class="container">
+      <div id="cardLeft" class="card" onclick="myFunction(0)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src='Pile.jpg' alt='Nana Grizol - Ruth'/>
+          </div>
+          <div class="card-back">
+            <h1> DRIPPING </h1>
+            <h3> Pile </h3>
+            Baby Boy <br/>
+            So Hard <br/>
+            Grunt Like a Pig <br/>
+            Prom Song <br/>
+            Bump a Grape <br/>
+            Sun Poisoning <br/>
+            Bubblegum <br/>
+            Steve's Mouth <br/>
+            The Jones <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="containerRight" class="container">
+      <div id="cardRight" class="card" onclick="myFunction(2)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="RamshackleGlory.jpg" alt="Nana Grizol - Ruth"/>
+          </div>
+          <div class="card-back">
+            <h1>LIVE THE DREAM</h1>
+            <h3> Ramshackle Glory </h3>
+            First Song <br/>
+            More About Alcoholism <br/>
+            We Are All Compost in Training <br/>
+            From Here Till Utopia <br/>
+            Never Coming Home <br/>
+            Vampires Are Poseurs <br/>
+            Of Ballots and Barricades <br/>
+            Bitter Old Man <br/>
+            Your Hear is a Muscle the Size of Your Fist <br/>
+            First Song, Pt 2 <br/>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
+

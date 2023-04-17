@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+        <title>News McNewsFace</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/1c931d5b5b.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+        <nav class="nav">
+                <div class="nav-left">
+                        <div class="nav-title skew">
+                                <h1 class="unskew">
+                                        Newsy McNewsFace
+                                </h1>
+                        </div>
+                </div>
+                <div class="nav-right">
+                        <div class="nav-section">Sign In</div>
+                        <div class="nav-section">About Us</div>
+                        <div class="nav-section">Contact</div>
+                        <div class="nav-section" style="width : 0.5vw; color : rgb(18,33,75); background-color : rgb(18,33,75);"> 1 </div>
+                </div>
+        </nav>
+
+        <main>
+                <div class="side-bar">
+                        <h3> Sections </h3>
+                        <dl class="news-section-list">
+                                <dt class="news-section"> Local </dt>
+                                <dd> Local Story 1 </dd>
+                                <dd> Local Story 2 </dd>
+                                <dt class="news-section"> National </dt>
+                                <dd> National Story 1 </dd>
+                                <dd> National Story 2 </dd>
+                                <dt class="news-section"> International </dt>
+                                <dd> International Story 1 </dd>
+                                <dd> International Story 2 </dd>
+                        </dl>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div style="text-align : center; font-size : 0.5em"> some subscript stuff </div>
+                </div>
+                <div class="main-body">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="description">
+                                There are three main tools that make up how websites are structured and transferred –
+                                those being HyperText Markup Language, Cascading Style Sheets, and JavaScript. 
+                                HyperText Markup Language, or HTML, is perhaps the most foundational element of 
+                                webpage and digital design – making up the text and image content of the webpage, 
+                                classifying them by elements, classes, and identifiers, and laying out their general 
+                                structure for the page. Cascading Style Sheets, or CSS, is then the tool that takes 
+                                html content and styles it by its classifications – responsible for more stylistic 
+                                choices such as font, spacing, and color, as well as key elements including 
+                                positioning, sizing, and general layout. JavaScript is the last tool that often comes
+                                paired in the trio, enabling more interactive elements of a webpage through direct 
+                                function calls, event listeners and clever scripting. If we were to think of a webpage
+                                as a container for information much akin to a physical cupboard or dresser, then HTML
+                                would comprise the drawers and contents, while CSS captures properties such as color,
+                                sizing, ornamentation, and layout. Lastly, JavaScript would make up the more 
+                                interactive elements of the dresser not quite embodied by the previous two, including 
+                                how it opens, if it locks, and perhaps if there are other user features. Although 
+                                alternatives and upgrades have been created for each tool in the time since their 
+                                inception, this phase of the practicum primarily focuses on how to create a webpage 
+                                from scratch using foundational HTML5, CSS3, and JavaScript. As part of a three-webpage 
+                                series, each webpage showcases and highlights a specific tool of the trio, 
+                                demonstrating their strengths and use cases while getting in some practice. 
+                                <br>
+                                <br>
+                                For this example, I created a news-site webpage to demonstrate the usage and structure 
+                                of HTML. As mentioned previously, HTML primarily encapsulates much of the textual and 
+                                image content of a webpage, but also captures important information such as metadata, 
+                                links, and text formatting. In doing so, HTML structures information in distinct 
+                                elements, nesting them as necessary to produce a layered effect of data and styles. 
+                                While many elements are general and can functionally be swapped interchangeably, others
+                                may have specific features embedded within them, such as links, images, lists, or 
+                                scripts. As well, elements and their contents can be further divided into classes and 
+                                identifiers for further specialization, which are often used in CSS and JavaScript to 
+                                reference subsets or specific elements. While identifiers tend to be specific, - 
+                                unique to a single element in a document – classes are more general, with the ability 
+                                to be shared between multiple elements and for elements to have multiple classes. 
+                                Together, classification by proper elements, classes, and identifiers doesn’t just 
+                                signal to a viewer how information should be grouped but allows other tools to better 
+                                integrate with the content as well. 
+                                <br>
+                                <br>
+                                This webpage attempts to capture the spirit of HTML by utilizing and nesting separate 
+                                elements together to create three main sections of the ‘news-site’ – those being the 
+                                upper navbar for the sites’ title and general information, the side navbar for the 
+                                sites’ current stories divided by region, and the main body where one may find this 
+                                passage as well as other example articles. By looking at the contents of the 
+                                ‘index.html’ file, one may find that each of these sections comprise different but 
+                                important elements and classes. The upper navbar, for instance, uses the &ltnav&gt element
+                                to contain its contents, which each section within it being nested &ltdiv&gt elements of 
+                                different classes. In contrast, the sidebar uses a custom &ltdiv&gt and ‘.side-bar’ class 
+                                to separate its style from the previous section, and instead orders its contents as a
+                                list of links to articles. Lastly, the main body comprises a list of articles by 
+                                creating sequential &ltdiv&gt elements with the ‘.card’ class, each containing more nested
+                                elements with the article’s region, photo, and title. Together, these create a simple 
+                                news-site with an intuitive UI and uses common classes within its structure to 
+                                highlight how the HTML content itself is used and structured. 
+                        </div>
+                        <br>
+
+
+                        <div class="header">
+                                <h1> LOCAL </h1>
+                        </div>
+
+                        <div id="local1" class = "card">
+                                <div class = "card-section"> 
+                                        Local
+                                </div>
+                                <div class = "card-image"> 
+                                        <img src="image.jpg" alt="Girl in a jacket" style="width : 100%"/>
+                                </div>
+                                <div class = "card-title"> 
+                                        Local Story Example 1
+                                </div>
+                        </div>
+
+                        <div class = "card">
+                                <div class = "card-section"> 
+                                        Local
+                                </div>
+                                <div class = "card-image"> 
+                                        <img src="image.jpg" alt="Girl in a jacket" style="width : 100%"/>
+                                </div>
+                                <div class = "card-title"> 
+                                        Local Story Example 2
+                                </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <div class="header">
+                                <h1> NATIONAL </h1>
+                        </div>
+
+                        <div class = "card">
+                                <div class = "card-section"> 
+                                        National
+                                </div>
+                                <div class = "card-image"> 
+                                        <img src="image.jpg" alt="Girl in a jacket" style="width : 100%"/>
+                                </div>
+                                <div class = "card-title"> 
+                                        National Story Example 1
+                                </div>
+                        </div>
+
+                        <div class = "card">
+                                <div class = "card-section"> 
+                                        National
+                                </div>
+                                <div class = "card-image"> 
+                                        <img src="image.jpg" alt="Girl in a jacket" style="width : 100%"/>
+                                </div>
+                                <div class = "card-title"> 
+                                        National Story Example 2
+                                </div>
+                        </div>
+
+                        <br>
+                        <br>
+                        <br>
+                        <div class="header">
+                                <h1> INTERNATIONAL </h1>
+                        </div>
+
+                        <div class = "card">
+                                <div class = "card-section"> 
+                                        International Story Example 1
+                                </div>
+                                <div class = "card-image"> 
+                                        <img src="image.jpg" alt="Girl in a jacket" style="width : 100%"/>
+                                </div>
+                                <div class = "card-title"> 
+                                        International Story Example 2
+                                </div>
+                        </div>
+
+                        <div class = "card">
+                                <div class = "card-section"> 
+                                        International
+                                </div>
+                                <div class = "card-image"> 
+                                        <img src="image.jpg" alt="Girl in a jacket" style="width : 100%"/>
+                                </div>
+                                <div class = "card-title"> 
+                                        International2
+                                </div>
+                        </div>
+
+                </div>
+        </main>
+
+  </body>
+
+  </html>

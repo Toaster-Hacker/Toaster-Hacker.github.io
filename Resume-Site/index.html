@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Resume</title>
+    <link rel="stylesheet" id="test" href="styles1.css" />
+    <script src="https://kit.fontawesome.com/1c931d5b5b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div class = "image-carousel">
+      <div class="turn" onclick="rotateImage(-1)"><i class="fa-solid fa-arrow-left"></i></div>
+      <div id="image-display"><img src="TexasInstruments.png"/></div>
+      <div class="turn" onclick="rotateImage(1)"><i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+
+    <br>
+
+    <nav>
+      <div id="nav-home-section" class="nav-left">
+        <a href="#" class="nav-title">Monique Payton Rehl</a>
+      </div>
+      <a href="https://www.linkedin.com/in/monique-rehl-1790ba203/" target="_blank" class="nav-section"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/Toaster-Hacker" target="_blank" class="nav-section"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:mprehl@gmail.com" class="nav-section"><i class="fa-solid fa-envelope"></i></a>
+      <a href="MoniquePaytonRehl_Resume.pdf" class="nav-section"><i class="fa-solid fa-file" style="font-size:0.9em" target="_blank"></i></a>
+    </nav>
+
+    <main>
+
+      <br>
+      <div class="description">
+        There are three main tools that make up how websites are structured and transferred – those being HyperText 
+        Markup Language, Cascading Style Sheets, and JavaScript. HyperText Markup Language, or HTML, is perhaps the 
+        most foundational element of webpage and digital design – making up the text and image content of the webpage,
+        classifying them by elements, classes, and identifiers, and laying out their general structure for the page. 
+        Cascading Style Sheets, or CSS, is then the tool that takes html content and styles it by its classifications –
+        responsible for more stylistic choices such as font, spacing, and color, as well as key elements including 
+        positioning, sizing, and general layout. JavaScript is the last tool that often comes paired in the trio, 
+        enabling more interactive elements of a webpage through direct function calls, event listeners and clever 
+        scripting. If we were to think of a webpage as a container for information much akin to a physical cupboard or 
+        dresser, then HTML would comprise the drawers and contents, while CSS captures properties such as color, 
+        sizing, ornamentation, and layout. Lastly, JavaScript would make up the more interactive elements of the 
+        dresser not quite embodied by the previous two, including how it opens, if it locks, and perhaps if there are 
+        other user features. Although alternatives and upgrades have been created for each tool in the time since their 
+        inception, this phase of the practicum primarily focuses on how to create a webpage from scratch using 
+        foundational HTML5, CSS3, and JavaScript. As part of a three-webpage series, each webpage showcases and 
+        highlights a specific tool of the trio, demonstrating their strengths and use cases while getting in some 
+        practice. 
+        <br>
+        For this example, I created a simple resume webpage to demonstrate the usage and properties of CSS. As 
+        mentioned previously, CSS primarily focuses on the styling and layout of a webpage, modifying existing HTML 
+        content via property declarations. Using HTML’s system of identifying elements, classes, and identifiers, CSS 
+        is primarily structured as a list of selectors that each pull out and style certain objects within a HTML page.
+        In doing so, selectors can not only pull out specific objects, but also the objects neighbor, descending, and 
+        ascending from them in nested sequence – as well as objects undergoing specific states such as a mouse hover or
+        click. Each selector can set then properties that change the look and layout of the elements, with declarations
+        ranging from general size and color to positioning and spacing. In doing so, entire webpages can be laid out in
+        methods unique to the digital platform, with navbars that move with your scrolling, buttons that become 
+        recessed with a mouse hover, and moving objects across the page.
+        <br>
+        This webpage attempts to capture the importance and freedom of CSS by emulating a resume site under three 
+        different stylesheets. As demonstrated by different the cards located on the bottom, the main elements of the
+        website – those being the image carousel, the cards, and especially the navbar – all change in design and 
+        layout as different stylesheets take center stage. The first stylesheet, as shown by card 1, uses a dark navy 
+        layout which places the navbar between the image carousel and cards, but sticks to the top of the page as a 
+        user scrolls down. The second stylesheet, as shown by card 2, uses a bold orange layout which places the navbar 
+        vertically on the side of the screen aside the other two objects. The third stylesheet, as shown by card 3, 
+        uses a vibrant green layout with places the navbar at the top of the webpage always, such that it always comes 
+        first. By changing the design and layout of objects as simple as the navbar, the aesthetic of the webpage can 
+        shift dramatically with each different stylesheet. While CSS doesn’t change the content of a webpage, it can 
+        order and style it to improve its flow and delivery.
+
+      </div>
+
+
+      <div class="card-container">
+        <div id="style1" class="card" onclick="changeStyle('styles1.css')">STYLE 1</div>
+        <div id="style2" class="card" onclick="changeStyle('styles2.css')">STYLE 2</div>
+        <div id="style3" class="card" onclick="changeStyle('styles3.css')">STYLE 3</div>
+      </div>
+
+    </main>
+
+  </body>
+</html>
+
