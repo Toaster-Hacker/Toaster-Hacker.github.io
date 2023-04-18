@@ -73,7 +73,7 @@ body{
 
   text-align: center;
   line-height: 40px;
-  background-image: url("/photos/mountain.png");
+  background-image: url("/mountain.png");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -91,7 +91,7 @@ body{
 
   text-align: center;
   line-height: 4vw;
-  background-image: url("/photos/school.png");
+  background-image: url("/school.png");
   background-size: contain;
   background-repeat: no-repeat;
 
