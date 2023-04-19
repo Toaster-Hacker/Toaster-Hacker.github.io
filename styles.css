@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x : clip;
 }
 
 *{
@@ -74,7 +73,7 @@ body{
 
   text-align: center;
   line-height: 40px;
-  background-image: url("/mountain.png");
+  background-image: url("../Photos/mountain.png");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -92,7 +91,7 @@ body{
 
   text-align: center;
   line-height: 4vw;
-  background-image: url("/school.png");
+  background-image: url("../Photos/school.png");
   background-size: contain;
   background-repeat: no-repeat;
 
