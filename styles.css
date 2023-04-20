@@ -649,7 +649,6 @@ iframe {
 }
 
 @media only screen and (max-width: 515px) {
-  body {background-color : blue;}
   .pointer {
     clip-path: polygon(
     calc(1vw * 90 * 0.85) 0,
@@ -695,7 +694,7 @@ iframe {
 }
 
 @media only screen and (max-width: 514px) {
-  body {background-color : red;}
+  body {background-color : blue;}
   nav .nav-left {
     padding-left : 10px;
     line-height : 10vh;
@@ -710,11 +709,11 @@ iframe {
   nav .nav-section {
     width : 17vw;
     font-size : 0.80em;
-    line-height: 1.15vh;
+    line-height: 2vh;
   }
   .basics-carousel-title h1 {
     font-size : 2.1em;
-    line-height : 3em;
+    line-height : 2.25em;
   }
   .pointer-inner h1 {
     top : 15vh;
@@ -732,7 +731,7 @@ iframe {
   .pointer-inner {
     top : 3vh;
     background-position: top;
-    background-size:325%;
+    background-size:330%;
   }
   .about-carousel-card {
     font-size : 0.9em;
