@@ -738,12 +738,4 @@ iframe {
   .about-carousel-card {
     font-size : 0.9em;
   }
-  .ios-only {
-    background-color : white;
-    position : fixed;
-    top : 0;
-    left : 100vw;
-    width : 1150vw;
-    height : 100%;
-  }
 }
