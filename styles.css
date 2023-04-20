@@ -694,6 +694,11 @@ iframe {
 }
 
 @media only screen and (max-width: 514px) {
+  body {
+    background-color : red;
+    position : fixed;
+    left : 0;
+  }
   nav .nav-left {
     padding-left : 10px;
     line-height : 10vh;
@@ -733,5 +738,13 @@ iframe {
   }
   .about-carousel-card {
     font-size : 0.9em;
+  }
+  .ios-only {
+    background-color : white;
+    position : fixed;
+    top : 0;
+    left : 100vw;
+    width : 1150vw;
+    height : 100%;
   }
 }
