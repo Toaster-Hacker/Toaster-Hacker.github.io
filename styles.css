@@ -697,14 +697,16 @@ iframe {
   .basics-carousel-title h1 {
     font-size : 2em;
   }
-    .pointer-inner h1 {
-    top : 20vh;
-    font-size : 3.25em;
+  .pointer-inner h1 {
+    top : 10vh;
+    font-size : 2.5em;
     line-height: 1em;
     width : 80%;
   }
   .pointer-inner h3 {
     top : 20vh;
     font-size : 1.2em;
+  }
+    background-size:350%;
   }
 }
