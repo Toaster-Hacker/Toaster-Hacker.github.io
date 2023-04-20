@@ -508,6 +508,9 @@ iframe {
 }
 
 @media only screen and (max-width: 1030px) {
+  body {
+    background-color : green;
+  }
   .card .title {
     text-align: center;
     line-height: 19px;
@@ -649,6 +652,9 @@ iframe {
 }
 
 @media only screen and (max-width: 515px) {
+  body {
+    background-color : red;
+  }
   .pointer {
     clip-path: polygon(
     calc(1vw * 90 * 0.85) 0,
@@ -693,11 +699,11 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 514px) {
   html {
     overflow-x : hidden;
   }
   body {
-    background-color : red;
+    background-color : blue;
   }
 }
