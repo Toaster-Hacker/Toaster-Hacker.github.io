@@ -694,8 +694,25 @@ iframe {
 }
 
 @media only screen and (max-width: 514px) {
+  nav .nav-left {
+    padding-left : 10px;
+    line-height : 10vh;
+  }
+  .nav-title {
+    font-size: 1.5em;
+    font-weight: 5em;
+    line-height: 1.10em;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+  }
+  nav .nav-section {
+    width : 16vw;
+    font-size : 0.90em;
+    line-height: 8.5vh;
+  }
   .basics-carousel-title h1 {
-    font-size : 2em;
+    font-size : 2.1em;
+    line-height : 1.5em;
   }
   .pointer-inner h1 {
     top : 10vh;
@@ -704,9 +721,15 @@ iframe {
     width : 80%;
   }
   .pointer-inner h3 {
-    top : 20vh;
+    top : 10vh;
     font-size : 1.2em;
   }
+  .pointer {
+    top : 10vh;
+  }
+  .pointer-inner {
+    top : 3vh;
+    background-position: top;
     background-size:350%;
   }
 }
