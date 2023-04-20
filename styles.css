@@ -694,6 +694,7 @@ iframe {
 }
 
 @media only screen and (max-width: 514px) {
+  body {background-color : red;}
   nav .nav-left {
     padding-left : 10px;
     line-height : 10vh;
@@ -706,13 +707,13 @@ iframe {
     text-decoration: none;
   }
   nav .nav-section {
-    width : 16vw;
-    font-size : 0.90em;
-    line-height: 1.1vh;
+    width : 17vw;
+    font-size : 0.80em;
+    line-height: 1.15vh;
   }
   .basics-carousel-title h1 {
     font-size : 2.1em;
-    line-height : 1.5em;
+    line-height : 3em;
   }
   .pointer-inner h1 {
     top : 15vh;
