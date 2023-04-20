@@ -693,9 +693,11 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
+  html {
+    overflow-x : hidden;
+  }
   body {
     background-color : red;
-    overflow-x : clip;
   }
 }
