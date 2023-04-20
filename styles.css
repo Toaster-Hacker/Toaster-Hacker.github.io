@@ -695,7 +695,6 @@ iframe {
 
 @media only screen and (max-width: 514px) {
   body {
-    background-color : blue;
     left : 0;
   }
   nav .nav-left {
