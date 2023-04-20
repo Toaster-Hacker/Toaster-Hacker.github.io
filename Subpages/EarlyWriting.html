@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Graphic Design Practicum</title>
     <link rel="stylesheet" href="../styles.css">
-    <style>
+        <style>
       body {
         display: block;
         text-align : left;
@@ -19,22 +19,31 @@
       h3 {
         font-size : 2em; 
         position : relative;
-        top : 1vh;
+        top : -0.8vh;
         left : 4.56vw;
       }
       .underline {
         background-color: black;
         width : 50vw;
-        height : 0.5vh;
+        height : 0.75vh;
         position : relative;
-        top : 1.25vh;
+        top : 0.25vh;
         left : 4.56vw;
       }
       p {
         position : relative;
-        top : 2vh;
         left : 4.56vw;
         width : 90%;
+      }
+
+      @media only screen and (max-width: 515px){
+        .underline {
+          height : 0.5vh;
+          top : 1.25vh;
+        }
+        h3 {
+          top : 0vh;
+        }
       }
     </style>
   </head>
