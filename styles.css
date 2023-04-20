@@ -3,14 +3,12 @@
 html {
   scroll-behavior: smooth;
 }
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body{
 
   display: flex;
@@ -18,10 +16,7 @@ body{
   justify-content: center;
   align-items: center;
   overflow-x : hidden;
- 
-
 }
-
 .container{
   flex-grow : 1;
 
@@ -36,7 +31,6 @@ body{
 
   perspective: 1200px;
 }
-
 .card{
   width: 70vw;
   height: 70vw;
@@ -47,13 +41,11 @@ body{
 
   transform-style: preserve-3d;
 }
-
 .card .card-bg{
   position: relative;
   top : -12vw;
   right : -4vw;
 }
-
 .card .card-bg img{
   width: 100%;
 
@@ -61,7 +53,6 @@ body{
   position : relative;
   border-radius: 10px;
 }
-
 .card .layer1 {
   width : 70vw;
   height : 39.35vw;
@@ -79,7 +70,6 @@ body{
 
   transition: all 0.3s ease-out;
 }
-
 .card .layer2 {
   width : 70vw;
   height : 39.35vw;
@@ -278,6 +268,7 @@ nav .nav-section {
 
   width : 36%;
   height : 100%;
+  overflow-y : hidden;
 
   background-color : rgb(6,11,25);
 
@@ -366,11 +357,11 @@ nav .nav-section {
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
-  background-size:130%;
+  background-size:180%;
 }
 
 .pointer-inner:hover {
-  background-size:120%;
+  background-size:160%;
   transition : 0.8s;
 }
 
@@ -447,12 +438,18 @@ iframe {
   transform : rotate(180deg);
 }
 
-#extras a {
+.documents-container {
+  height : 75vh;
+  position : absolute;
+  left : 61vw;
+  top : 19vh;
+}
+
+.documents-container a {
   font-size: 2.5em;
   font-weight: 5em;
-  position : absolute;
-  left : 70vw;
-  top : 18vh;
+  position : relative;
+  left : 10vw;
   color : white;
   text-decoration: none;
 }
@@ -498,6 +495,8 @@ iframe {
 #extras {
   background-color : rgb(6,11,25);
   color : white;
+  height : 100vh;
+  padding-top: 7vh;
 }
 
 #history {
@@ -506,4 +505,190 @@ iframe {
 
 .spacer {
   height : 1600vh;
+}
+
+@media only screen and (max-width: 1030px) {
+  .card .title {
+    text-align: center;
+    line-height: 19px;
+    font-size : 1.1em;
+  }
+  nav .nav-left {
+    padding-left : 20px;
+    line-height : 10vh;
+  }
+  .nav-title {
+    font-size: 2em;
+    font-weight: 5em;
+    line-height: 1.10em;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+  }
+  nav .nav-section {
+    width : 13vw;
+    font-size : 1em;
+    line-height: 8.5vh;
+  }
+  .about-carousel-card {
+    margin-right : 15vw;
+    margin-left : 5vw;
+    font-size : 1em;
+    width : 80vw;
+  }
+  .basics-carousel-title h1 {
+    font-size : 2.9em;
+  }
+  .pointer {
+    clip-path: polygon(
+    calc(1vw * 90 * 0.85) 0,
+    calc(1vw * 90) 40%,
+    calc(1vw * 90 * 0.85) 80%,
+    0% 80%,
+    calc(1vw * 90 * 0.15) 40%,
+    0% 0%
+  );
+  }
+  .pointer-inner {
+    top : 3vh;
+    clip-path: polygon(
+    calc(1vw * 81 * 0.85) 0,
+    calc(1vw * 81) 40%,
+    calc(1vw * 81 * 0.85) 80%,
+    0% 80%,
+    calc(1vw * 81 * 0.15) 40%,
+    0% 0%
+  );
+    background-size:290%;
+    background-position: top;
+    
+  }
+  .pointer-inner:hover {
+    background-size:280%;
+  }
+  .pointer-inner h1 {
+    top : 20vh;
+    font-size : 3.25em;
+    line-height: 1em;
+    width : 80%;
+  }
+  .pointer-inner:hover h1 {
+    font-size : 3.35em;
+  }
+  .pointer-inner h3 {
+    top : 20vh;
+    font-size : 1.5em;
+  }
+  .pointer-inner:hover h3 {
+    font-size : 1.6em;
+  }
+  .basics-carousel-card {
+    display : flex;
+    flex-direction: column;
+  }
+  .basics-carousel-image {
+    width : 100%;
+  }
+  .basics-carousel-passage {
+    width : 100%;
+  
+    border-style : solid;
+    border-top-style : none;
+  }
+  #extras {
+    height : 200vh;
+  }
+  #extras h3 {
+    font-size: 2em;
+    line-height: 0.5em;
+    writing-mode:horizontal-tb;
+    transform: rotate(0);
+  }
+  iframe {
+    width : 100%;
+    height : vh;
+    top : 5vh;
+    left : 0;
+  }
+  .iframe-link-container {
+    height : 9vh;
+    width : 100%;
+    left : 0;
+    top : 4.5vh;
+  }
+  .iframe-link {
+    height : 100%;
+    width : 70vw;
+    margin-right : .5vw;
+    background-size : 160%;
+    font-size : 2em;
+    line-height: 10em;
+    border:2px solid rgba(255,255,255,0.8);
+  }
+  .iframe-link:hover {
+    background-size : 150%;
+    transition : 0.8s;
+  }
+  .documents-container {
+    position : relative;
+    left : 0vw;
+    top : 10vh;
+  }
+  .documents-container h3 {
+    writing-mode:horizontal-tb;
+    position : relative;
+    transform : rotate(0);
+  }
+  .documents-container a {
+    position : relative;
+    left : 4vw;
+    top : 5vh;
+    font-size: 2em;
+    font-weight: 5em;
+
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .pointer {
+    clip-path: polygon(
+    calc(1vw * 90 * 0.85) 0,
+    calc(1vw * 90) 35%,
+    calc(1vw * 90 * 0.85) 70%,
+    0% 70%,
+    calc(1vw * 90 * 0.15) 35%,
+    0% 0%
+  );
+  }
+  .pointer-inner {
+    top : 3vh;
+    clip-path: polygon(
+    calc(1vw * 81 * 0.85) 0,
+    calc(1vw * 81) 35%,
+    calc(1vw * 81 * 0.85) 70%,
+    0% 70%,
+    calc(1vw * 81 * 0.15) 35%,
+    0% 0%
+  );
+    background-size:260%;
+    background-position:top;
+  }
+  .pointer-inner:hover {
+    background-size:252%;
+  }
+  .pointer-inner h1 {
+    top : 20vh;
+    font-size : 3em;
+    line-height: 1em;
+    width : 80%;
+  }
+  .pointer-inner:hover h1 {
+    font-size : 3.25em;
+  }
+  .pointer-inner h3 {
+    top : 20vh;
+    font-size : 1.5em;
+  }
+  .pointer-inner:hover h3 {
+    font-size : 1.6em;
+  }
 }
