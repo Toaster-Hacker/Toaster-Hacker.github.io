@@ -737,4 +737,9 @@ iframe {
   .about-carousel-card {
     font-size : 0.9em;
   }
+  .section {
+    width : 100vw;
+    position : sticky;
+    overflow-y : hidden;
+  }
 }
